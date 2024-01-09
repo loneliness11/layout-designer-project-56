@@ -1,0 +1,83 @@
+.page-popular-track {
+  padding-top: 100px;
+  background: var(--Black, #08020D);
+  &__title {
+    margin-bottom: 50px;
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+.track__img {
+  height: 55px;
+  width: 55px;
+  margin-right: 15px;
+}
+.track {
+  width: 551px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  &__img-and-text {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__time {
+    color: var(--Gray, #E0E0E0);
+    font-family: Roboto;
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+.tracks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tracks .track:nth-child(odd) {
+  margin-right: 50px; /* Установите нужное значение отступа */
+}
+.track__text1 {
+  color: var(--White, #FFF);
+  font-family: Roboto;
+  font-size: 12.8px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.track__text2 {
+  color: var(--Gray, #E0E0E0);
+  font-family: Roboto;
+  font-size: 12.8px;
+  font-style: normal;
+  font-weight: 400;
+}
+.track:nth-child(5), .track:nth-child(6) {
+  margin-bottom: 0;
+}
+@media (max-width: 415px) {
+  .container {
+    width: 100%;
+  }
+  .page-popular-track {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .tracks .track:nth-child(odd) {
+    margin-right: 0;
+  }
+  .track:nth-child(5) {
+    margin-bottom: 25px;
+}
+  .page-popular-track__title {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,91 @@
+.header-artist {
+  background-image: url('../images/Morten\ Harket.png');
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  &__title {
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__descr {
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-top: 16px;
+  }
+  &__button {
+    position: relative;
+    border-radius: 5px;
+    width: 200px;
+    height: 62px;
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 19.2px */
+    padding: 20px 30px;
+    display: flex;
+    text-transform: uppercase;
+    &:first-child {
+      margin-right: 24px;
+    }
+  }
+  &__buttons {
+    margin-top: 46px;
+    display: flex;
+  }
+}
+.purple {
+  background: var(--Purple, #5328A1);
+  &::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../images/play-button.svg');
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+  }
+}
+.orange {
+  background: var(--Red, #95390C);
+  &::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../images/heart.svg');
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    color: #fff;
+}
+}
+@media (max-width: 415px) {
+  .container {
+    width: 100%;
+  }
+  .header-artist {
+    padding-right: 20px;
+    padding-left: 20px;
+    &__title {
+      font-size: 30px;
+      padding-top: 55px;
+    }
+    &__buttons {
+      flex-direction: column;
+      &:first-child {
+        padding-bottom: 24px;
+      }
+    }
+  }
+  .purple {
+    margin-bottom: 24px;
+  }
+}

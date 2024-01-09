@@ -1,0 +1,134 @@
+.main {
+  background: #08020D;
+  // убрать потом высоту
+  padding-top: 100px;
+  &__title {
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px; /* 150% */
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__cards-wrapper {
+    display: flex;
+    margin-top: 45px;
+  }
+  &__descr {
+    color: var(--White, #FFF);
+    text-align: center;
+    /* Text Size 1 */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-top: 43px;
+  }
+}
+.pricing-item {
+  background-image: url('../images/subscribe_1.png');
+  height: 615px;
+  width: 368.197px;
+  background-position: center;
+  background-size: cover;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  border-radius: 1rem;
+  margin-right: 50px;
+  &__title {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 24px;
+  }
+  &__value {
+    display: flex;
+    padding-top: 200px;
+    justify-content: center;
+    &-price {
+      color: var(--White, #FFF);
+      font-family: Roboto;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 64px */
+      text-align: center;
+      margin-right: 16px;
+    }
+    &-rub {
+      color: var(--White, #FFF);
+      font-family: Roboto;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 64px */
+      text-align: center;
+      padding-top: 8px;
+      text-transform: uppercase;
+    }
+  }
+  &__button {
+    margin-top: 40px;
+    display: block;
+    width: 318.66px;
+    height: 66px;
+    border-radius: 5px;
+    border: 1px solid var(--White, #FFF); 
+    color: var(--White, #FFF);
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    text-transform: uppercase;
+  }
+}
+.pricing-footer {
+  margin-top: 64px;
+  color: var(--White, #FFF);
+  text-align: center;
+
+  /* Text Small */
+  font-family: Roboto;
+  font-size: 12.8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 19.2px */
+}
+.bg-standart {
+  background-image: url('../images/subscribe_2.png');
+}
+.bg-premium {
+  background-image: url('../images/subscribe_3.png');
+}
+@media (max-width: 415px) {
+  .container {
+    width: 100%;
+  }
+  .main {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .main__cards-wrapper {
+    flex-direction: column;
+  }
+  .main__title {
+    font-size: 18px;
+  }
+  .pricing-item__title {
+    font-size: 16px;
+  }
+  .pricing-items:not(:last-child) {
+    margin-bottom: 50px; /* Добавляем отступ снизу для всех кроме последней карточки */
+  }
+}

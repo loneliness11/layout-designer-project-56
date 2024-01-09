@@ -1,0 +1,38 @@
+.discography-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  column-gap: 50px;
+  row-gap: 25px;
+}
+
+.discography-item {
+  img {
+    width: 250px;
+  }
+  .discography-info {
+    margin-top: 11px;
+    h3 {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 700;
+      color: $white;
+  
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .discography-grid {
+    grid-template-columns: 137px 137px;
+  }
+  .discography-item {
+    img {
+      height: 137px;
+      width: 137px;
+    }
+  }
+}
