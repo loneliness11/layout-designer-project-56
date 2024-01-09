@@ -1,0 +1,10 @@
+.banner-artist {
+  background-image: url("../../images/artist/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.artist-description {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}/*# sourceMappingURL=description.css.map */
